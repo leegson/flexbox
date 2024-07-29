@@ -1,0 +1,35 @@
+h1{
+    color: orangered;
+}
+    
+/* quando eu dou o max-width, a responsividade entende q começa como desktop e quando tiver menor q 500px vai mudar pra celular */
+@media screen and (max-width: 500px){ 
+    h1{
+        color: greenyellow;
+    }
+    /* quando a tela tiver menos que 500px, a cor da letra vai mudar */
+
+}
+
+/* quando for programação mobile first, eu faço assim: */
+/* min-width */
+p{
+    background-color: aquamarine;
+    color:black;
+}
+@media screen and (min-width: 800px){
+    p{
+        /* quando eu dou o max-width, a responsividade entende q o paragrafo vai ficar do jeito q especifiquei no media screen e quando for diferente de 800px, ele muda */
+        background-color: black;
+        color: yellow; 
+        /* quando eu mexer na largura da tela e ela tiver 800px, o paragrafo vai ter backgroung black e color yellow */
+
+    }
+
+@media screen and (orientation: landscape){
+h2{
+    display: none;
+}
+
+}
+}
